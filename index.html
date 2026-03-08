@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GeoPrint STL Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      window.CESIUM_BASE_URL = "https://cdn.jsdelivr.net/npm/cesium@1.118/Build/Cesium/";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/cesium@1.118/Build/Cesium/Cesium.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div id="map"></div>
+      <aside id="control-panel">
+        <h1>GeoPrint STL Builder</h1>
+        <div class="row">
+          <input id="search-input" type="text" placeholder="Search place (e.g. Tokyo)" />
+          <button id="search-btn">Search</button>
+        </div>
+
+        <section>
+          <h2>Area Selection</h2>
+          <div class="row">
+            <button id="select-area-btn">Select Area</button>
+            <button id="move-area-btn">Move Area</button>
+          </div>
+          <label>
+            Selection shape
+            <select id="selection-shape">
+              <option value="square">Square</option>
+              <option value="rectangle">Rectangle</option>
+              <option value="custom">Custom Ratio</option>
+              <option value="bed180">Bed 180x180</option>
+              <option value="bed220">Bed 220x220</option>
+              <option value="bed256">Bed 256x256</option>
+            </select>
+          </label>
+          <label>Custom width ratio <input id="custom-ratio-w" type="number" value="1" min="0.1" step="0.1" /></label>
+          <label>Custom height ratio <input id="custom-ratio-h" type="number" value="1" min="0.1" step="0.1" /></label>
+          <p id="selection-metrics">No area selected.</p>
+          <p id="building-estimate">Estimated buildings: —</p>
+        </section>
+
+        <section id="settings-grid"></section>
+
+        <section>
+          <div class="row">
+            <button id="generate-btn">Generate 3D Model</button>
+            <button id="regenerate-btn">Regenerate</button>
+            <button id="export-btn" disabled>Export STL</button>
+          </div>
+          <div id="status">Idle.</div>
+          <div id="warning"></div>
+        </section>
+      </aside>
+      <div id="preview-wrap">
+        <canvas id="preview-canvas"></canvas>
+        <div id="preview-info"></div>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
