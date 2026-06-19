@@ -163,6 +163,13 @@ body {
   text-decoration: none;
   flex-shrink: 0;
 }
+.nav-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+.footer-brand .nav-logo-img { height: 44px; filter: brightness(0) invert(1); }
 .nav-logo span {
   font-size: 1rem;
   font-weight: 800;
