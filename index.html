@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EchoPark Consulting | AI-Native ERP Implementation</title>
+  <meta name="description" content="The first consulting firm specializing in Rillet AI-native ERP implementation. Transform your finance operations with 20+ years of implementation expertise." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/>
+            <path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.3"/>
+            <circle cx="20" cy="22" r="2" fill="var(--accent)"/>
+            <path d="M8 35 Q14 32 20 35 Q26 38 32 35" stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">EchoPark <span>Consulting</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-particles" id="particles"></div>
+      <div class="hero-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-glow hero-glow-3"></div>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-badge reveal">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Rillet's Premier Implementation Partner
+      </div>
+      <h1 class="hero-title reveal">
+        Your Finance Team<br/>Deserves Better<br/><span class="hero-highlight">Than Legacy ERP</span>
+      </h1>
+      <p class="hero-subtitle reveal">
+        EchoPark Consulting is the first firm dedicated exclusively to Rillet—the AI-native ERP built from scratch for modern finance teams. We guide you from day one to go-live and beyond, in weeks, not years.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Start Your Transformation
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#process" class="btn btn-ghost btn-lg">
+          See How It Works
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <strong>20+</strong>
+          <span>Years Experience</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>#1</strong>
+          <span>Rillet Partner</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>30 Days</strong>
+          <span>Avg. Go-Live</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <strong>100%</strong>
+          <span>Success Rate</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-label">Trusted by teams scaling from startup to enterprise</p>
+      <div class="trust-logos">
+        <div class="trust-logo-item">
+          <svg width="100" height="28" viewBox="0 0 100 28"><rect x="0" y="8" width="18" height="12" rx="3" fill="currentColor" opacity="0.6"/><text x="24" y="20" font-family="Poppins,sans-serif" font-size="14" font-weight="700" fill="currentColor" opacity="0.6">Rillet</text></svg>
+        </div>
+        <div class="trust-logo-item">
+          <svg width="120" height="28" viewBox="0 0 120 28"><circle cx="14" cy="14" r="10" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"/><text x="30" y="19" font-family="Poppins,sans-serif" font-size="13" font-weight="600" fill="currentColor" opacity="0.6">FinTech Corp</text></svg>
+        </div>
+        <div class="trust-logo-item">
+          <svg width="120" height="28" viewBox="0 0 120 28"><polygon points="14,4 24,22 4,22" fill="currentColor" opacity="0.6"/><text x="32" y="19" font-family="Poppins,sans-serif" font-size="13" font-weight="600" fill="currentColor" opacity="0.6">ScaleUp Co</text></svg>
+        </div>
+        <div class="trust-logo-item">
+          <svg width="130" height="28" viewBox="0 0 130 28"><rect x="2" y="6" width="22" height="16" rx="4" fill="none" stroke="currentColor" stroke-width="2" opacity="0.6"/><text x="32" y="19" font-family="Poppins,sans-serif" font-size="13" font-weight="600" fill="currentColor" opacity="0.6">Enterprise Inc</text></svg>
+        </div>
+        <div class="trust-logo-item">
+          <svg width="110" height="28" viewBox="0 0 110 28"><path d="M14 4 L24 14 L14 24 L4 14 Z" fill="currentColor" opacity="0.6"/><text x="32" y="19" font-family="Poppins,sans-serif" font-size="13" font-weight="600" fill="currentColor" opacity="0.6">GrowthHub</text></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM SECTION -->
+  <section class="problem section" id="problem">
+    <div class="container">
+      <div class="problem-grid">
+        <div class="problem-content reveal">
+          <div class="section-label">The Problem</div>
+          <h2 class="section-title">Your ERP Shouldn't Hold Your Business Hostage</h2>
+          <p class="section-body">Traditional ERP systems were built for a world that no longer exists—expensive, inflexible, and requiring armies of consultants to maintain. Meanwhile, your finance team is buried in manual work, spreadsheet workarounds, and reporting delays.</p>
+          <div class="problem-list">
+            <div class="problem-item">
+              <div class="problem-icon problem-icon--red">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <span>12-month implementation timelines that drain resources</span>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon problem-icon--red">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <span>Manual close processes eating 10+ days each month</span>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon problem-icon--red">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <span>No real-time visibility into financial performance</span>
+            </div>
+            <div class="problem-item">
+              <div class="problem-icon problem-icon--red">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <span>Revenue recognition errors creating compliance risk</span>
+            </div>
+          </div>
+        </div>
+        <div class="problem-visual reveal reveal-right">
+          <div class="vs-card">
+            <div class="vs-side vs-side--old">
+              <div class="vs-label">Legacy ERP</div>
+              <div class="vs-metric"><span class="metric-bad">12 months</span><span>to go-live</span></div>
+              <div class="vs-metric"><span class="metric-bad">$500K+</span><span>implementation cost</span></div>
+              <div class="vs-metric"><span class="metric-bad">10 days</span><span>monthly close</span></div>
+              <div class="vs-metric"><span class="metric-bad">Quarterly</span><span>reporting cycles</span></div>
+            </div>
+            <div class="vs-divider">
+              <div class="vs-divider-text">VS</div>
+            </div>
+            <div class="vs-side vs-side--new">
+              <div class="vs-label">Rillet + EchoPark</div>
+              <div class="vs-metric"><span class="metric-good">~30 days</span><span>to go-live</span></div>
+              <div class="vs-metric"><span class="metric-good">Transparent</span><span>predictable pricing</span></div>
+              <div class="vs-metric"><span class="metric-good">3 days</span><span>monthly close</span></div>
+              <div class="vs-metric"><span class="metric-good">Real-time</span><span>financial insights</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What We Do</div>
+        <h2 class="section-title">End-to-End Rillet Implementation</h2>
+        <p class="section-subtitle">From first conversation to full optimization, EchoPark is your dedicated partner at every stage of the journey.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </div>
+          <h3>Process Mapping</h3>
+          <p>We document your current workflows, identify inefficiencies, and design optimized processes that leverage Rillet's AI capabilities—before a single line of configuration is written.</p>
+          <div class="service-tags">
+            <span>Workflow Analysis</span>
+            <span>Gap Assessment</span>
+            <span>Future State Design</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+          </div>
+          <h3>System Configuration</h3>
+          <p>Our certified Rillet consultants configure every module to match your business model—revenue recognition rules, chart of accounts, approval workflows, integrations, and more.</p>
+          <div class="service-tags">
+            <span>Revenue Recognition</span>
+            <span>Custom Workflows</span>
+            <span>Integrations</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3>Data Migration</h3>
+          <p>We extract, transform, and load your historical financial data with precision—ensuring every transaction, balance, and record arrives in Rillet accurately and completely.</p>
+          <div class="service-tags">
+            <span>Historical Data</span>
+            <span>Validation & Reconciliation</span>
+            <span>Audit Trail</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3>Testing & Validation</h3>
+          <p>We run comprehensive parallel testing, UAT sessions, and scenario-based validation to ensure your team's confidence is ironclad before you go live.</p>
+          <div class="service-tags">
+            <span>UAT Support</span>
+            <span>Parallel Runs</span>
+            <span>Sign-off Process</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+          </div>
+          <h3>Training & Enablement</h3>
+          <p>We train every stakeholder—from CFOs to AP clerks—with role-specific sessions that build genuine competence, not just familiarity. Your team will love Rillet from day one.</p>
+          <div class="service-tags">
+            <span>Role-Based Training</span>
+            <span>Documentation</span>
+            <span>Video Guides</span>
+          </div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <h3>Ongoing Support</h3>
+          <p>Go-live is the beginning, not the end. Our team remains your dedicated resource for enhancements, new module rollouts, additional training, and strategic optimization after launch.</p>
+          <div class="service-tags">
+            <span>Help Desk Access</span>
+            <span>System Optimization</span>
+            <span>New Feature Rollouts</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section" id="process">
+    <div class="process-bg">
+      <div class="process-glow"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">The EchoPark Method</div>
+        <h2 class="section-title">A Proven Path to Go-Live</h2>
+        <p class="section-subtitle">Twenty years of implementation lessons, refined into a process that consistently delivers on time, on budget, and on scope.</p>
+      </div>
+      <div class="process-timeline">
+        <div class="process-line"></div>
+        <div class="process-step reveal">
+          <div class="process-step-number">01</div>
+          <div class="process-step-content">
+            <h3>Discovery & Scoping</h3>
+            <p>We learn your business inside out—current systems, pain points, team structure, and growth plans. You receive a detailed project plan with clear milestones before we begin.</p>
+            <div class="process-duration">Week 1</div>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number">02</div>
+          <div class="process-step-content">
+            <h3>Process Mapping</h3>
+            <p>We document your financial workflows and design future-state processes optimized for Rillet—ensuring every business requirement is captured before configuration begins.</p>
+            <div class="process-duration">Weeks 1–2</div>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number">03</div>
+          <div class="process-step-content">
+            <h3>Configuration & Build</h3>
+            <p>Our consultants configure Rillet to your exact specifications—chart of accounts, revenue recognition, approval flows, and all integrations to your tech stack.</p>
+            <div class="process-duration">Weeks 2–4</div>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number">04</div>
+          <div class="process-step-content">
+            <h3>Data Migration</h3>
+            <p>We migrate your historical data with full reconciliation—every balance, transaction, and vendor record verified before a single user logs into production.</p>
+            <div class="process-duration">Weeks 3–5</div>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number">05</div>
+          <div class="process-step-content">
+            <h3>Testing & Validation</h3>
+            <p>Parallel runs, UAT workshops, and scenario testing build the confidence your team needs. We don't proceed until every stakeholder is satisfied.</p>
+            <div class="process-duration">Weeks 4–6</div>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number">06</div>
+          <div class="process-step-content">
+            <h3>Training & Go-Live</h3>
+            <p>Role-specific training ensures every team member knows exactly what to do in Rillet. We're on-call during your first close to ensure everything runs smoothly.</p>
+            <div class="process-duration">Week 6</div>
+          </div>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-step-number">07</div>
+          <div class="process-step-content">
+            <h3>Ongoing Partnership</h3>
+            <p>We stay with you—answering questions, rolling out new features, onboarding new team members, and helping you continuously extract more value from Rillet.</p>
+            <div class="process-duration">Ongoing</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="20">0</div>
+          <div class="stat-suffix">+ Years</div>
+          <div class="stat-label">ERP Implementation Experience</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="30">0</div>
+          <div class="stat-suffix">Days</div>
+          <div class="stat-label">Average Time to Go-Live</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="100">0</div>
+          <div class="stat-suffix">%</div>
+          <div class="stat-label">Implementation Success Rate</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-suffix">Days</div>
+          <div class="stat-label">Monthly Close After Implementation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ECHOPARK -->
+  <section class="why section" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content reveal">
+          <div class="section-label">Why EchoPark</div>
+          <h2 class="section-title">Transformation Starts with People, Not Software</h2>
+          <p class="section-body">Anyone can sell you software. We're in the business of making your team actually thrive with it. That's why our approach is fundamentally different from traditional implementation firms.</p>
+          <div class="why-list">
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <div>
+                <h4>Rillet-Exclusive Expertise</h4>
+                <p>We are the only firm that focuses exclusively on Rillet. No split attention, no generalist consultants—just deep, specialist knowledge that accelerates your implementation.</p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div>
+                <h4>Right First Time, Every Time</h4>
+                <p>Our structured methodology eliminates the rework cycles that plague traditional ERP projects. We scope it right, build it right, and test it right—so go-live is a celebration, not a crisis.</p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <div>
+                <h4>Startup Speed, Enterprise Discipline</h4>
+                <p>We move fast—average go-live in 30 days—without cutting corners. Whether you're a 10-person startup or a 500-person enterprise, our process scales to your complexity.</p>
+              </div>
+            </div>
+            <div class="why-item reveal">
+              <div class="why-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <div>
+                <h4>A Partner, Not a Vendor</h4>
+                <p>We're invested in your long-term success. Our clients don't become strangers after go-live—they become long-term partners we grow with as their business evolves.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-visual reveal reveal-right">
+          <div class="why-card-stack">
+            <div class="why-floating-card wfc-1">
+              <div class="wfc-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <div>
+                <div class="wfc-title">Go-Live Complete</div>
+                <div class="wfc-sub">Ahead of schedule · Under budget</div>
+              </div>
+            </div>
+            <div class="why-floating-card wfc-2">
+              <div class="wfc-icon wfc-icon--teal">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <div>
+                <div class="wfc-title">Monthly Close: 3 Days</div>
+                <div class="wfc-sub">Down from 12 days</div>
+              </div>
+            </div>
+            <div class="why-floating-card wfc-3">
+              <div class="wfc-icon wfc-icon--amber">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <div class="wfc-title">Implementation: 28 Days</div>
+                <div class="wfc-sub">vs. 12-month industry avg.</div>
+              </div>
+            </div>
+            <div class="why-main-graphic">
+              <div class="why-graphic-inner">
+                <div class="why-graphic-ring why-graphic-ring--1"></div>
+                <div class="why-graphic-ring why-graphic-ring--2"></div>
+                <div class="why-graphic-ring why-graphic-ring--3"></div>
+                <div class="why-graphic-core">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+                    <path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.4"/>
+                    <circle cx="20" cy="22" r="3" fill="var(--accent)"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Client Stories</div>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="var(--accent)" opacity="0.3"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          </div>
+          <p class="testimonial-text">"EchoPark took us from a tangled mess of spreadsheets and a 12-day close to running our entire finance operation in Rillet—in under five weeks. The EchoPark team knew exactly what we needed before we even finished explaining it."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Sarah K.</div>
+              <div class="testimonial-role">CFO, Series B SaaS Company</div>
+            </div>
+            <div class="testimonial-stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-quote">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="var(--accent)" opacity="0.3"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          </div>
+          <p class="testimonial-text">"We evaluated three implementation partners and chose EchoPark for one reason: they actually understood our business model before they ever opened Rillet. The configuration they delivered was exactly right—first time."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div>
+              <div class="testimonial-name">Michael R.</div>
+              <div class="testimonial-role">VP Finance, Mid-Market Tech Firm</div>
+            </div>
+            <div class="testimonial-stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card testimonial-card--featured reveal">
+          <div class="testimonial-quote">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="var(--accent)" opacity="0.5"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+          </div>
+          <p class="testimonial-text">"What sets EchoPark apart isn't just their Rillet expertise—it's that they care about our team succeeding long after the implementation. Eighteen months in, they're still our first call when we have a question or need to add a new feature."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">J</div>
+            <div>
+              <div class="testimonial-name">Jennifer L.</div>
+              <div class="testimonial-role">Controller, Enterprise SaaS</div>
+            </div>
+            <div class="testimonial-stars">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RILLET PARTNER SECTION -->
+  <section class="partner section">
+    <div class="container">
+      <div class="partner-card reveal">
+        <div class="partner-content">
+          <div class="partner-badge">Official Implementation Partner</div>
+          <h2>The Only Consulting Firm Built Around Rillet</h2>
+          <p>Rillet is reimagining ERP from the ground up—AI-native, built by accountants, and designed to replace legacy systems like NetSuite, QuickBooks, and Sage. EchoPark is Rillet's dedicated implementation partner, helping companies make the move with confidence.</p>
+          <a href="contact.html" class="btn btn-primary">Speak with a Rillet Expert</a>
+        </div>
+        <div class="partner-visual">
+          <div class="partner-glow-card">
+            <div class="partner-logo-big">
+              <span>Rillet</span>
+              <div class="partner-logo-sub">AI-Native ERP</div>
+            </div>
+            <div class="partner-plus">+</div>
+            <div class="partner-logo-small">
+              <div class="logo-icon-sm">
+                <svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.4"/></svg>
+              </div>
+              <span>EchoPark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section section" id="cta">
+    <div class="cta-bg">
+      <div class="cta-glow"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content reveal">
+        <div class="section-label">Ready to Transform?</div>
+        <h2 class="cta-title">Get Live on Rillet in 30 Days</h2>
+        <p class="cta-subtitle">Join the companies that chose EchoPark to implement Rillet the right way. Start with a free discovery call—no pressure, just expertise.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-primary btn-xl">
+            Book a Free Discovery Call
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="services.html" class="btn btn-outline btn-xl">Explore Our Services</a>
+        </div>
+        <div class="cta-trust">
+          <div class="cta-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            No commitment required
+          </div>
+          <div class="cta-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Response within 24 hours
+          </div>
+          <div class="cta-trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            Free discovery call
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <div class="logo-icon">
+              <svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.3"/><circle cx="20" cy="22" r="2" fill="var(--accent)"/><path d="M8 35 Q14 32 20 35 Q26 38 32 35" stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+            </div>
+            <span class="logo-text">EchoPark <span>Consulting</span></span>
+          </a>
+          <p class="footer-tagline">The first consulting firm dedicated exclusively to Rillet AI-native ERP implementation.</p>
+          <div class="footer-social">
+            <a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html#process-mapping">Process Mapping</a></li>
+            <li><a href="services.html#configuration">System Configuration</a></li>
+            <li><a href="services.html#data-migration">Data Migration</a></li>
+            <li><a href="services.html#training">Training & Enablement</a></li>
+            <li><a href="services.html#support">Ongoing Support</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html#team">Our Team</a></li>
+            <li><a href="index.html#process">The EchoPark Method</a></li>
+            <li><a href="index.html#testimonials">Client Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="contact.html">Book a Discovery Call</a></li>
+            <li><a href="contact.html#faq">FAQ</a></li>
+          </ul>
+          <div class="footer-contact">
+            <a href="mailto:hello@echoparkconsulting.com" class="footer-email">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              hello@echoparkconsulting.com
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EchoPark Consulting. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
