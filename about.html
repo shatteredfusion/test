@@ -1,195 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About | EchoPark Consulting</title>
-  <meta name="description" content="EchoPark Consulting — the first firm dedicated exclusively to Rillet AI-native ERP. 20+ years of implementation expertise, people-first philosophy." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="EchoPark Consulting — the first firm dedicated exclusively to Rillet AI-native ERP. 20+ years of implementation expertise, people-first philosophy."/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.3"/><circle cx="20" cy="22" r="2" fill="var(--accent)"/><path d="M8 35 Q14 32 20 35 Q26 38 32 35" stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
-        <span class="logo-text">EchoPark <span>Consulting</span></span>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link active">About</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M16 2L30 26H2L16 2Z" stroke="#22D3EE" stroke-width="2" fill="none"/>
+        <path d="M16 9L24 23H8L16 9Z" fill="#22D3EE" opacity="0.35"/>
+        <circle cx="16" cy="19" r="2.5" fill="#22D3EE"/>
+        <path d="M6 29Q11 26 16 29Q21 32 26 29" stroke="#10B981" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>EchoPark<em>Consulting</em></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <a href="contact.html" class="nav-btn magnetic">Get Started</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="tag" data-aos="fade-up">Our Story</div>
+  <h1 data-aos="fade-up" data-aos-delay="100">
+    We Believe Transformation<br/>Starts with <span class="gradient-text">People</span>
+  </h1>
+  <p data-aos="fade-up" data-aos-delay="200">
+    EchoPark was founded on a simple premise: ERP implementations fail when consultants treat software as the solution and people as the variable. We do it the other way around.
+  </p>
+</section>
+
+<!-- MISSION -->
+<section class="section-pad" style="background:var(--bg)">
+  <div class="container">
+    <div class="problem-layout">
+      <div data-aos="fade-right">
+        <div class="tag">Our Mission</div>
+        <h2 class="display-heading">Helping Finance Teams<br/><span class="gradient-text">Thrive</span>, Not Just Survive</h2>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:20px">We started EchoPark after watching too many ERP projects go sideways—not because of technology failures, but because consultants showed up with a pre-built playbook and ignored the humans who had to live in the system every day.</p>
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:20px">When Rillet launched as the first truly AI-native ERP, we recognized it as the platform that finally matched our philosophy: built by accountants, for accountants, with AI woven in from day one—not bolted on as an afterthought.</p>
+        <p style="color:var(--muted);line-height:1.8">So we built the consulting practice that Rillet deserved—one that combines deep technical implementation expertise with genuine commitment to your team's long-term success.</p>
       </div>
-      <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
-
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container page-hero-content">
-      <div class="section-label reveal" style="justify-content:center">Our Story</div>
-      <h1 class="reveal">We Believe Transformation<br/>Starts with People</h1>
-      <p class="reveal">EchoPark was founded on a simple premise: ERP implementations fail when consultants treat software as the solution and people as the variable. We do it the other way around.</p>
-    </div>
-  </section>
-
-  <!-- MISSION -->
-  <section class="section" style="background:var(--bg)">
-    <div class="container">
-      <div class="problem-grid">
-        <div class="reveal">
-          <div class="section-label">Our Mission</div>
-          <h2 class="section-title">Helping Finance Teams Thrive, Not Just Survive</h2>
-          <p class="section-body">We started EchoPark after watching too many ERP projects go sideways—not because of technology failures, but because consultants showed up with a pre-built playbook and ignored the humans who had to live in the system every day.</p>
-          <p class="section-body">When Rillet launched as the first truly AI-native ERP, we recognized it as the platform that finally matched our philosophy: built by accountants, for accountants, with AI woven in from day one rather than bolted on as an afterthought.</p>
-          <p class="section-body">So we built the consulting practice that Rillet deserved—one that combines deep technical implementation expertise with genuine commitment to your team's long-term success.</p>
-        </div>
-        <div class="reveal reveal-right">
-          <div class="why-card-stack" style="height:400px">
-            <div class="why-floating-card wfc-1">
-              <div class="wfc-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg></div>
-              <div><div class="wfc-title">People-First Philosophy</div><div class="wfc-sub">Every decision starts with the team</div></div>
-            </div>
-            <div class="why-floating-card wfc-2">
-              <div class="wfc-icon wfc-icon--teal"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-              <div><div class="wfc-title">Rillet Specialists</div><div class="wfc-sub">100% focused, zero generalists</div></div>
-            </div>
-            <div class="why-floating-card wfc-3">
-              <div class="wfc-icon wfc-icon--amber"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div>
-              <div><div class="wfc-title">20+ Years Experience</div><div class="wfc-sub">Across every ERP platform</div></div>
-            </div>
-            <div class="why-main-graphic">
-              <div class="why-graphic-inner">
-                <div class="why-graphic-ring why-graphic-ring--1"></div>
-                <div class="why-graphic-ring why-graphic-ring--2"></div>
-                <div class="why-graphic-ring why-graphic-ring--3"></div>
-                <div class="why-graphic-core"><svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.4"/><circle cx="20" cy="22" r="3" fill="var(--accent)"/></svg></div>
-              </div>
-            </div>
+      <div data-aos="fade-left">
+        <div class="partner-visual" style="width:100%;max-width:400px;margin:0 auto">
+          <div class="pv-ring pv-ring--1"></div>
+          <div class="pv-ring pv-ring--2"></div>
+          <div class="pv-ring pv-ring--3"></div>
+          <div class="pv-core">
+            <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+              <path d="M16 2L30 26H2L16 2Z" stroke="#22D3EE" stroke-width="2" fill="none"/>
+              <path d="M16 9L24 23H8L16 9Z" fill="#22D3EE" opacity="0.4"/>
+              <circle cx="16" cy="19" r="2.5" fill="#22D3EE"/>
+            </svg>
+          </div>
+          <div class="pv-float pv-float--1">
+            <div class="pvf-icon">✓</div>
+            <div><b>People-First</b><small>Every decision starts here</small></div>
+          </div>
+          <div class="pv-float pv-float--2">
+            <div class="pvf-icon" style="background:rgba(16,185,129,0.15);color:#10B981">⚡</div>
+            <div><b>Rillet Specialists</b><small>100% focused, zero generalists</small></div>
+          </div>
+          <div class="pv-float pv-float--3">
+            <div class="pvf-icon" style="background:rgba(245,158,11,0.15);color:#F59E0B">★</div>
+            <div><b>20+ Years</b><small>ERP implementation expertise</small></div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- TEAM -->
-  <section class="section" id="team" style="background:var(--primary)">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">Our Team</div>
-        <h2 class="section-title">Implementation Experts Who've Done This Before</h2>
-        <p class="section-subtitle">Our team brings decades of ERP implementation experience across industries—and now channels all of it into making Rillet implementations exceptional.</p>
+<!-- TEAM -->
+<section class="section-pad team-section" id="team">
+  <div class="container">
+    <div class="section-header" style="text-align:center;max-width:600px;margin:0 auto 60px">
+      <div class="tag" data-aos="fade-up" style="justify-content:center;margin-bottom:12px">Our Team</div>
+      <h2 class="display-heading" data-aos="fade-up" data-aos-delay="100">Implementation Experts<br/>Who've Done This Before</h2>
+      <p data-aos="fade-up" data-aos-delay="200" style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-top:16px">Our team brings decades of ERP implementation experience across industries—and channels all of it into making Rillet implementations exceptional.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="team-avatar">M</div>
+        <div class="team-name">Maral Verma</div>
+        <div class="team-role">Founder &amp; Lead Consultant</div>
+        <p class="team-bio">With 20+ years implementing ERP systems across industries—including 7 years as a senior NetSuite consultant—Maral founded EchoPark to build the implementation practice that Rillet's breakthrough platform deserves. Her people-first approach has guided dozens of successful go-lives.</p>
       </div>
-      <div class="team-grid">
-        <div class="team-card reveal">
-          <div class="team-avatar">M</div>
-          <div class="team-name">Maral Verma</div>
-          <div class="team-title">Founder & Lead Consultant</div>
-          <p class="team-bio">With 20+ years implementing ERP systems across industries—including 7 years as a senior NetSuite consultant—Maral founded EchoPark to build the implementation practice that Rillet's breakthrough platform deserves. Her people-first approach has guided dozens of successful go-lives.</p>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-avatar">R</div>
+        <div class="team-name">Rillet Certified Team</div>
+        <div class="team-role">Implementation Consultants</div>
+        <p class="team-bio">Every EchoPark consultant is Rillet-certified with deep hands-on platform experience. Our team has collectively managed implementations ranging from seed-stage startups to publicly traded enterprises—bringing the right expertise to every engagement.</p>
+      </div>
+      <div class="team-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-avatar">D</div>
+        <div class="team-name">Data &amp; Migration Specialists</div>
+        <div class="team-role">Technical Team</div>
+        <p class="team-bio">Our technical specialists handle the most complex aspects of implementation: data extraction from legacy systems, transformation logic, reconciliation, and integration architecture. They ensure your data arrives in Rillet accurately, completely, and audit-ready.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section-pad" style="background:var(--bg)">
+  <div class="container">
+    <div style="text-align:center;max-width:540px;margin:0 auto 56px">
+      <div class="tag" data-aos="fade-up" style="justify-content:center;margin-bottom:12px">What We Stand For</div>
+      <h2 class="display-heading" data-aos="fade-up" data-aos-delay="100">Our Values</h2>
+      <p data-aos="fade-up" data-aos-delay="200" style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-top:16px">These aren't values we put on a wall—they're commitments that show up in how we work with every client, every day.</p>
+    </div>
+    <div class="values-grid">
+      <div class="value-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="value-number">01</div>
+        <h3>People Before Software</h3>
+        <p>Technology is only as valuable as the people using it. Every decision we make—from configuration choices to training design—is filtered through one question: will this make your team more effective?</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="value-number">02</div>
+        <h3>Right First Time</h3>
+        <p>We'd rather take the time to scope and build something correctly than rush to a go-live that creates months of cleanup work. Our clients don't call us to fix someone else's ERP implementation.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="value-number">03</div>
+        <h3>Radical Transparency</h3>
+        <p>If something is behind schedule, we tell you immediately. If a feature you want isn't the right approach, we say so. Our clients always know exactly where their project stands and why.</p>
+      </div>
+      <div class="value-card" data-aos="fade-up" data-aos-delay="240">
+        <div class="value-number">04</div>
+        <h3>Long-Term Partnership</h3>
+        <p>We don't optimize for project revenue. We optimize for client success—because clients who succeed with Rillet become long-term partners who grow with us and refer us to others.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="about-stats">
+  <div class="container">
+    <div class="about-stats-grid">
+      <div class="about-stat" data-aos="fade-up" data-aos-delay="0">
+        <div class="about-stat-num"><span class="count-up" data-target="20">0</span>+</div>
+        <div class="about-stat-label">Years of ERP Implementation Experience</div>
+      </div>
+      <div class="about-stat" data-aos="fade-up" data-aos-delay="80">
+        <div class="about-stat-num">#1</div>
+        <div class="about-stat-label">Rillet-Exclusive Consulting Firm</div>
+      </div>
+      <div class="about-stat" data-aos="fade-up" data-aos-delay="160">
+        <div class="about-stat-num"><span class="count-up" data-target="30">0</span></div>
+        <div class="about-stat-label">Average Days from Kickoff to Go-Live</div>
+      </div>
+      <div class="about-stat" data-aos="fade-up" data-aos-delay="240">
+        <div class="about-stat-num"><span class="count-up" data-target="100">0</span>%</div>
+        <div class="about-stat-label">Client Implementation Success Rate</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div class="inner-cta">
+  <div class="container">
+    <div class="tag" data-aos="fade-up" style="justify-content:center;margin-bottom:16px">Work With Us</div>
+    <h2 data-aos="fade-up" data-aos-delay="100">Let's Build<br/><span class="gradient-text">Something That Lasts</span></h2>
+    <p data-aos="fade-up" data-aos-delay="200">Ready for an ERP implementation partner who invests in your team's success—not just your go-live date? Let's talk.</p>
+    <div class="inner-cta-btns" data-aos="fade-up" data-aos-delay="300">
+      <a href="contact.html" class="btn-glow magnetic">
+        <span>Book a Discovery Call</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="services.html" class="btn-ghost magnetic">Our Services</a>
+    </div>
+    <div class="inner-cta-trust" data-aos="fade-up" data-aos-delay="400">
+      <span>✓ No commitment</span>
+      <span>✓ Reply within 24 hrs</span>
+      <span>✓ Free discovery call</span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2L30 26H2L16 2Z" stroke="#22D3EE" stroke-width="2" fill="none"/><path d="M16 9L24 23H8L16 9Z" fill="#22D3EE" opacity="0.35"/><circle cx="16" cy="19" r="2.5" fill="#22D3EE"/><path d="M6 29Q11 26 16 29Q21 32 26 29" stroke="#10B981" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          <span>EchoPark<em>Consulting</em></span>
+        </a>
+        <p>The first consulting firm dedicated exclusively to Rillet AI-native ERP implementation.</p>
+        <a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" class="footer-li" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html#process-mapping">Process Mapping</a>
+          <a href="services.html#configuration">Configuration</a>
+          <a href="services.html#data-migration">Data Migration</a>
+          <a href="services.html#training">Training</a>
+          <a href="services.html#support">Ongoing Support</a>
         </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">R</div>
-          <div class="team-name">Rillet Certified Team</div>
-          <div class="team-title">Implementation Consultants</div>
-          <p class="team-bio">Every EchoPark consultant is Rillet-certified with deep hands-on platform experience. Our team has collectively managed implementations ranging from seed-stage startups to publicly traded enterprises—bringing the right expertise to every engagement.</p>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About Us</a>
+          <a href="about.html#team">Our Team</a>
+          <a href="index.html#process">Our Method</a>
+          <a href="index.html">Client Stories</a>
         </div>
-        <div class="team-card reveal">
-          <div class="team-avatar">D</div>
-          <div class="team-name">Data & Migration Specialists</div>
-          <div class="team-title">Technical Team</div>
-          <p class="team-bio">Our technical specialists handle the most complex aspects of implementation: data extraction from legacy systems, transformation logic, reconciliation, and integration architecture. They ensure your data arrives in Rillet accurately, completely, and audit-ready.</p>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="contact.html">Book a Call</a>
+          <a href="contact.html#faq">FAQ</a>
+          <a href="mailto:hello@echoparkconsulting.com">hello@echoparkconsulting.com</a>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- VALUES -->
-  <section class="section" style="background:var(--bg)">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">What We Stand For</div>
-        <h2 class="section-title">Our Values</h2>
-        <p class="section-subtitle">These aren't values we put on a wall—they're commitments that show up in how we work with every client, every day.</p>
-      </div>
-      <div class="values-grid">
-        <div class="value-card reveal">
-          <div class="value-number">01</div>
-          <h3>People Before Software</h3>
-          <p>Technology is only as valuable as the people using it. Every decision we make—from configuration choices to training design—is filtered through one question: will this make your team more effective?</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-number">02</div>
-          <h3>Right First Time</h3>
-          <p>We'd rather take the time to scope and build something correctly than rush to a go-live that creates months of cleanup work. Our clients don't call us to fix someone else's ERP implementation.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-number">03</div>
-          <h3>Radical Transparency</h3>
-          <p>If something is behind schedule, we tell you immediately. If a feature you want isn't the right approach, we say so. Our clients always know exactly where their project stands and why.</p>
-        </div>
-        <div class="value-card reveal">
-          <div class="value-number">04</div>
-          <h3>Long-Term Partnership</h3>
-          <p>We don't optimize for project revenue. We optimize for client success—because clients who succeed with Rillet become long-term partners who grow with us and refer us to others.</p>
-        </div>
-      </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EchoPark Consulting. All rights reserved.</p>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
     </div>
-  </section>
+  </div>
+</footer>
 
-  <!-- STATS -->
-  <section class="stats" style="padding:80px 0">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-card reveal"><div class="stat-number" data-target="20">0</div><div class="stat-suffix">+ Years</div><div class="stat-label">ERP Implementation Experience</div></div>
-        <div class="stat-card reveal"><div class="stat-number" data-target="1">0</div><div class="stat-suffix">st</div><div class="stat-label">Rillet-Exclusive Consulting Firm</div></div>
-        <div class="stat-card reveal"><div class="stat-number" data-target="30">0</div><div class="stat-suffix">Days</div><div class="stat-label">Average Time to Go-Live</div></div>
-        <div class="stat-card reveal"><div class="stat-number" data-target="100">0</div><div class="stat-suffix">%</div><div class="stat-label">Client Success Rate</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta-section section">
-    <div class="cta-bg"><div class="cta-glow"></div></div>
-    <div class="container">
-      <div class="cta-content reveal">
-        <div class="section-label">Work With Us</div>
-        <h2 class="cta-title">Let's Build Something That Lasts</h2>
-        <p class="cta-subtitle">If you're ready for an ERP implementation partner who invests in your team's success—not just your go-live date—we'd love to talk.</p>
-        <div class="cta-actions">
-          <a href="contact.html" class="btn btn-primary btn-xl">Book a Discovery Call <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          <a href="services.html" class="btn btn-outline btn-xl">Our Services</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo"><div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.3"/><circle cx="20" cy="22" r="2" fill="var(--accent)"/><path d="M8 35 Q14 32 20 35 Q26 38 32 35" stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div><span class="logo-text">EchoPark <span>Consulting</span></span></a>
-          <p class="footer-tagline">The first consulting firm dedicated exclusively to Rillet AI-native ERP implementation.</p>
-          <div class="footer-social"><a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></div>
-        </div>
-        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#process-mapping">Process Mapping</a></li><li><a href="services.html#configuration">System Configuration</a></li><li><a href="services.html#data-migration">Data Migration</a></li><li><a href="services.html#training">Training & Enablement</a></li><li><a href="services.html#support">Ongoing Support</a></li></ul></div>
-        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="about.html#team">Our Team</a></li><li><a href="index.html#process">The EchoPark Method</a></li><li><a href="index.html#testimonials">Client Stories</a></li></ul></div>
-        <div class="footer-col"><h4>Get Started</h4><ul><li><a href="contact.html">Book a Discovery Call</a></li><li><a href="contact.html#faq">FAQ</a></li></ul><div class="footer-contact"><a href="mailto:hello@echoparkconsulting.com" class="footer-email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@echoparkconsulting.com</a></div></div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 EchoPark Consulting. All rights reserved.</p>
-        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

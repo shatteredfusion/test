@@ -1,252 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | EchoPark Consulting</title>
-  <meta name="description" content="Book a free discovery call with EchoPark Consulting. Start your Rillet ERP implementation journey today." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Book a free discovery call with EchoPark Consulting. Start your Rillet ERP implementation journey today."/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linejoin="round"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.3"/><circle cx="20" cy="22" r="2" fill="var(--accent)"/><path d="M8 35 Q14 32 20 35 Q26 38 32 35" stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
-        <span class="logo-text">EchoPark <span>Consulting</span></span>
-      </a>
-      <div class="nav-links" id="navLinks">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
-      </div>
-      <a href="contact.html" class="btn btn-primary nav-cta">Get Started</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M16 2L30 26H2L16 2Z" stroke="#22D3EE" stroke-width="2" fill="none"/>
+        <path d="M16 9L24 23H8L16 9Z" fill="#22D3EE" opacity="0.35"/>
+        <circle cx="16" cy="19" r="2.5" fill="#22D3EE"/>
+        <path d="M6 29Q11 26 16 29Q21 32 26 29" stroke="#10B981" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>EchoPark<em>Consulting</em></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </nav>
+    <a href="contact.html" class="nav-btn magnetic">Get Started</a>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-  <!-- PAGE HERO -->
-  <section class="page-hero">
-    <div class="container page-hero-content">
-      <div class="section-label reveal" style="justify-content:center">Get in Touch</div>
-      <h1 class="reveal">Let's Talk About<br/>Your Rillet Journey</h1>
-      <p class="reveal">Start with a free discovery call. No pitch, no pressure—just a genuine conversation about your current ERP situation and whether Rillet and EchoPark are the right fit.</p>
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="tag" data-aos="fade-up">Get in Touch</div>
+  <h1 data-aos="fade-up" data-aos-delay="100">
+    Let's Talk About<br/>Your <span class="gradient-text">Rillet Journey</span>
+  </h1>
+  <p data-aos="fade-up" data-aos-delay="200">
+    Start with a free discovery call. No pitch, no pressure—just a genuine conversation about your current ERP situation and whether Rillet and EchoPark are the right fit.
+  </p>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="section-pad" style="background:var(--bg)">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info" data-aos="fade-right">
+        <h2>We'd Love to Hear From You</h2>
+        <p>Whether you're actively evaluating Rillet, just starting to explore options, or already committed and looking for the right implementation partner—this is the right place to start.</p>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="label">Email</div>
+              <div class="value"><a href="mailto:hello@echoparkconsulting.com" style="color:var(--accent);text-decoration:none">hello@echoparkconsulting.com</a></div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="label">Location</div>
+              <div class="value">Los Angeles, CA (serving clients nationwide)</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="label">Response Time</div>
+              <div class="value">Within 24 business hours</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-item-text">
+              <div class="label">LinkedIn</div>
+              <div class="value"><a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">Connect with Maral Verma</a></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-expect">
+          <div class="contact-expect-title">What to Expect</div>
+          <div class="expect-step">
+            <div class="expect-num">1</div>
+            <div class="expect-body">
+              <strong>Discovery Call (30–45 min)</strong>
+              <span>We learn about your current system, team, and goals</span>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="expect-num">2</div>
+            <div class="expect-body">
+              <strong>Proposal &amp; Scope (3–5 days)</strong>
+              <span>We deliver a detailed project plan and transparent pricing</span>
+            </div>
+          </div>
+          <div class="expect-step">
+            <div class="expect-num">3</div>
+            <div class="expect-body">
+              <strong>Kickoff &amp; Begin</strong>
+              <span>Once aligned, we kick off your implementation immediately</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-card" data-aos="fade-left">
+        <h3>Book Your Free Discovery Call</h3>
+        <p>Tell us a bit about your situation and we'll be in touch within one business day.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Jane" required/>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Smith" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required/>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" name="company" placeholder="Acme Inc." required/>
+          </div>
+          <div class="form-group">
+            <label for="currentERP">Current ERP / Accounting System</label>
+            <select id="currentERP" name="currentERP">
+              <option value="" disabled selected>Select your current system…</option>
+              <option>NetSuite</option>
+              <option>QuickBooks Online</option>
+              <option>QuickBooks Desktop</option>
+              <option>Sage Intacct</option>
+              <option>Xero</option>
+              <option>Spreadsheets / No ERP</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="companySize">Company Size</label>
+            <select id="companySize" name="companySize">
+              <option value="" disabled selected>Select team size…</option>
+              <option>1–25 employees</option>
+              <option>26–100 employees</option>
+              <option>101–500 employees</option>
+              <option>500+ employees</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="timeline">Desired Go-Live Timeline</label>
+            <select id="timeline" name="timeline">
+              <option value="" disabled selected>Select timeline…</option>
+              <option>ASAP (within 30 days)</option>
+              <option>1–3 months</option>
+              <option>3–6 months</option>
+              <option>Exploring options, no set date</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Situation</label>
+            <textarea id="message" name="message" placeholder="What's driving the need to change ERP systems? What are your biggest pain points today?"></textarea>
+          </div>
+          <button type="submit" class="form-submit magnetic">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT SECTION -->
-  <section class="section" style="background:var(--bg)">
-    <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info reveal">
-          <h2>We'd Love to Hear From You</h2>
-          <p>Whether you're actively evaluating Rillet, just starting to explore options, or already committed and looking for the right implementation partner—this is the right place to start.</p>
-          <div class="contact-items">
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div class="contact-item-text">
-                <div class="label">Email</div>
-                <div class="value"><a href="mailto:hello@echoparkconsulting.com" style="color:inherit;text-decoration:none">hello@echoparkconsulting.com</a></div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div class="contact-item-text">
-                <div class="label">Location</div>
-                <div class="value">Los Angeles, CA (serving clients nationwide)</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div class="contact-item-text">
-                <div class="label">Response Time</div>
-                <div class="value">Within 24 business hours</div>
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-              </div>
-              <div class="contact-item-text">
-                <div class="label">LinkedIn</div>
-                <div class="value"><a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">Connect with Maral Verma</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div style="margin-top:40px;padding:24px;background:var(--surface);border:1px solid var(--border-light);border-radius:var(--radius-lg)">
-            <div class="section-label" style="margin-bottom:12px">What to Expect</div>
-            <div style="display:flex;flex-direction:column;gap:14px">
-              <div style="display:flex;gap:12px;align-items:flex-start">
-                <div style="width:28px;height:28px;border-radius:50%;background:rgba(34,211,238,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-family:var(--font-head);font-size:0.75rem;font-weight:800">1</div>
-                <div><div style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:2px">Discovery Call (30–45 min)</div><div style="font-size:0.82rem;color:var(--text-dim)">We learn about your current system, team, and goals</div></div>
-              </div>
-              <div style="display:flex;gap:12px;align-items:flex-start">
-                <div style="width:28px;height:28px;border-radius:50%;background:rgba(34,211,238,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-family:var(--font-head);font-size:0.75rem;font-weight:800">2</div>
-                <div><div style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:2px">Proposal & Scope (3–5 days)</div><div style="font-size:0.82rem;color:var(--text-dim)">We deliver a detailed project plan and transparent pricing</div></div>
-              </div>
-              <div style="display:flex;gap:12px;align-items:flex-start">
-                <div style="width:28px;height:28px;border-radius:50%;background:rgba(34,211,238,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);font-family:var(--font-head);font-size:0.75rem;font-weight:800">3</div>
-                <div><div style="font-size:0.88rem;font-weight:600;color:var(--white);margin-bottom:2px">Kickoff & Begin</div><div style="font-size:0.82rem;color:var(--text-dim)">Once aligned, we kick off your implementation immediately</div></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-card reveal reveal-right">
-          <h3>Book Your Free Discovery Call</h3>
-          <p>Tell us a bit about your situation and we'll be in touch within one business day.</p>
-          <form id="contactForm" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label for="firstName">First Name *</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Jane" required />
-              </div>
-              <div class="form-group">
-                <label for="lastName">Last Name *</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Work Email *</label>
-              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
-            </div>
-            <div class="form-group">
-              <label for="company">Company Name *</label>
-              <input type="text" id="company" name="company" placeholder="Acme Inc." required />
-            </div>
-            <div class="form-group">
-              <label for="currentERP">Current ERP / Accounting System</label>
-              <select id="currentERP" name="currentERP">
-                <option value="" disabled selected>Select your current system...</option>
-                <option>NetSuite</option>
-                <option>QuickBooks Online</option>
-                <option>QuickBooks Desktop</option>
-                <option>Sage Intacct</option>
-                <option>Xero</option>
-                <option>Spreadsheets / No ERP</option>
-                <option>Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="companySize">Company Size</label>
-              <select id="companySize" name="companySize">
-                <option value="" disabled selected>Select team size...</option>
-                <option>1–25 employees</option>
-                <option>26–100 employees</option>
-                <option>101–500 employees</option>
-                <option>500+ employees</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="timeline">Desired Go-Live Timeline</label>
-              <select id="timeline" name="timeline">
-                <option value="" disabled selected>Select timeline...</option>
-                <option>ASAP (within 30 days)</option>
-                <option>1–3 months</option>
-                <option>3–6 months</option>
-                <option>Exploring options, no set date</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="message">Tell Us About Your Situation</label>
-              <textarea id="message" name="message" placeholder="What's driving the need to change ERP systems? What are your biggest pain points today?"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">
-              Send Message
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-          </form>
-        </div>
-      </div>
+<!-- FAQ -->
+<section class="section-pad faq-section" id="faq">
+  <div class="container">
+    <div class="faq-section-header" data-aos="fade-up">
+      <div class="tag" style="margin-bottom:12px">FAQs</div>
+      <h2 class="display-heading">Frequently Asked<br/><span class="gradient-text">Questions</span></h2>
     </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq" style="background:var(--primary)">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">FAQs</div>
-        <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="faq-question">
+          How long does a Rillet implementation take with EchoPark?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-answer"><p>Most of our clients go live in 4–8 weeks. The exact timeline depends on complexity—number of entities, integrations required, volume of historical data to migrate, and how quickly your team can participate in UAT sessions. We'll give you a specific timeline estimate in your discovery call.</p></div>
       </div>
-      <div class="faq-list">
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            How long does a Rillet implementation take with EchoPark?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="faq-answer"><p>Most of our clients go live in 4–8 weeks. The exact timeline depends on complexity—number of entities, integrations required, volume of historical data to migrate, and how quickly your team can participate in UAT sessions. We'll give you a specific timeline estimate in your discovery call based on your actual situation.</p></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="60">
+        <div class="faq-question">
+          Do we need to already have Rillet to work with EchoPark?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            Do we need to already have Rillet to work with EchoPark?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="faq-answer"><p>No. We work with companies at any stage—from early evaluation through to post-launch optimization. If you're still deciding whether Rillet is right for you, we're happy to help you evaluate it alongside your other options. We only recommend implementations that we genuinely believe will serve you well.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            What does EchoPark charge for an implementation?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="faq-answer"><p>Our pricing is transparent and project-based—you'll know exactly what you're paying and what you're getting before we start. Cost varies based on complexity: number of legal entities, integration requirements, data migration complexity, and post-launch support needs. Book a discovery call and we'll give you a ballpark in our first conversation.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            We're on NetSuite. Is switching to Rillet the right move?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="faq-answer"><p>It depends on your situation. Rillet is particularly well-suited for SaaS and subscription businesses that need strong revenue recognition, real-time reporting, and AI-powered automation. Many of our clients have migrated from NetSuite and seen significant improvements in close time, reporting speed, and team satisfaction. We'll give you an honest assessment on your discovery call.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            What happens after go-live? Do you disappear?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="faq-answer"><p>Absolutely not. Post-launch support is a core part of what we offer. We stay available for questions, help your team during the first few close cycles, support new employee onboarding, and assist with rolling out new Rillet features as they're released. The nature and level of support evolves as your team becomes more independent, but we never just hand you the keys and walk away.</p></div>
-        </div>
-        <div class="faq-item reveal">
-          <div class="faq-question">
-            Are you able to work with companies outside the US?
-            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-          </div>
-          <div class="faq-answer"><p>Yes. While our team is based in Los Angeles, we work with clients across North America and can accommodate international implementations depending on the scope. Reach out and let's discuss your specific situation.</p></div>
-        </div>
+        <div class="faq-answer"><p>No. We work with companies at any stage—from early evaluation through to post-launch optimization. If you're still deciding whether Rillet is right for you, we're happy to help you evaluate it. We only recommend implementations that we genuinely believe will serve you well.</p></div>
       </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <a href="index.html" class="nav-logo"><div class="logo-icon"><svg viewBox="0 0 40 40" fill="none"><path d="M20 4 L36 30 L4 30 Z" fill="none" stroke="var(--accent)" stroke-width="2.5"/><path d="M20 10 L30 26 L10 26 Z" fill="var(--accent)" opacity="0.3"/><circle cx="20" cy="22" r="2" fill="var(--accent)"/><path d="M8 35 Q14 32 20 35 Q26 38 32 35" stroke="var(--accent-2)" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div><span class="logo-text">EchoPark <span>Consulting</span></span></a>
-          <p class="footer-tagline">The first consulting firm dedicated exclusively to Rillet AI-native ERP implementation.</p>
-          <div class="footer-social"><a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="120">
+        <div class="faq-question">
+          What does EchoPark charge for an implementation?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
-        <div class="footer-col"><h4>Services</h4><ul><li><a href="services.html#process-mapping">Process Mapping</a></li><li><a href="services.html#configuration">System Configuration</a></li><li><a href="services.html#data-migration">Data Migration</a></li><li><a href="services.html#training">Training & Enablement</a></li><li><a href="services.html#support">Ongoing Support</a></li></ul></div>
-        <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="about.html#team">Our Team</a></li><li><a href="index.html#process">The EchoPark Method</a></li><li><a href="index.html#testimonials">Client Stories</a></li></ul></div>
-        <div class="footer-col"><h4>Get Started</h4><ul><li><a href="contact.html">Book a Discovery Call</a></li><li><a href="contact.html#faq">FAQ</a></li></ul><div class="footer-contact"><a href="mailto:hello@echoparkconsulting.com" class="footer-email"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@echoparkconsulting.com</a></div></div>
+        <div class="faq-answer"><p>Our pricing is transparent and project-based—you'll know exactly what you're paying and what you're getting before we start. Cost varies based on complexity: number of legal entities, integration requirements, data migration complexity, and post-launch support needs. Book a discovery call and we'll give you a ballpark in our first conversation.</p></div>
       </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 EchoPark Consulting. All rights reserved.</p>
-        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="180">
+        <div class="faq-question">
+          We're on NetSuite. Is switching to Rillet the right move?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-answer"><p>It depends on your situation. Rillet is particularly well-suited for SaaS and subscription businesses that need strong revenue recognition, real-time reporting, and AI-powered automation. Many of our clients have migrated from NetSuite and seen significant improvements in close time, reporting speed, and team satisfaction. We'll give you an honest assessment on your discovery call.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="240">
+        <div class="faq-question">
+          What happens after go-live? Do you disappear?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-answer"><p>Absolutely not. Post-launch support is a core part of what we offer. We stay available for questions, help your team during the first few close cycles, support new employee onboarding, and assist with rolling out new Rillet features as they're released. We never just hand you the keys and walk away.</p></div>
+      </div>
+      <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-question">
+          Are you able to work with companies outside the US?
+          <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="faq-answer"><p>Yes. While our team is based in Los Angeles, we work with clients across North America and can accommodate international implementations depending on scope. Reach out and let's discuss your specific situation.</p></div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
 
-  <script src="main.js"></script>
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><path d="M16 2L30 26H2L16 2Z" stroke="#22D3EE" stroke-width="2" fill="none"/><path d="M16 9L24 23H8L16 9Z" fill="#22D3EE" opacity="0.35"/><circle cx="16" cy="19" r="2.5" fill="#22D3EE"/><path d="M6 29Q11 26 16 29Q21 32 26 29" stroke="#10B981" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg>
+          <span>EchoPark<em>Consulting</em></span>
+        </a>
+        <p>The first consulting firm dedicated exclusively to Rillet AI-native ERP implementation.</p>
+        <a href="https://www.linkedin.com/in/maralverma/" target="_blank" rel="noopener" class="footer-li" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <a href="services.html#process-mapping">Process Mapping</a>
+          <a href="services.html#configuration">Configuration</a>
+          <a href="services.html#data-migration">Data Migration</a>
+          <a href="services.html#training">Training</a>
+          <a href="services.html#support">Ongoing Support</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="about.html">About Us</a>
+          <a href="about.html#team">Our Team</a>
+          <a href="index.html#process">Our Method</a>
+          <a href="index.html">Client Stories</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="contact.html">Book a Call</a>
+          <a href="contact.html#faq">FAQ</a>
+          <a href="mailto:hello@echoparkconsulting.com">hello@echoparkconsulting.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EchoPark Consulting. All rights reserved.</p>
+      <div><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
